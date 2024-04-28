@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shard Slots</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  </head>
+  <body>
+  <link rel="stylesheet" href="green.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<iv>
+<script src="script.js"></script>
+</body>
+    <h1>Shard Slots</h1>
+    <table>
+      <tr>
+        <td><img id="slot1" src="1.png" /></td>
+        <td><img id="slot2" src="2.png" /></td>
+        <td><img id="slot3" src="3.png" /></td>
+      </tr>body>
+
+</d
+      <tr>
+        <td><img id="slot4" src="4.png" /></td>
+        <td><img id="slot5" src="5.png" /></td>
+        <td><img id="slot6" src="6.png" /></td>
+      </tr>
+      <tr>
+        <td><img id="slot7" src="7.png" /></td>
+        <td><img id="slot8" src="8.png" /></td>
+        <td><img id="slot9" src="9.png" /></td>
+      </tr>
+    </table>
+
+    <button onclick="spin()">Spin</button>
+    
+
+
+  <div class="right"></div>
+</button>
+
+
+    <script>
+      function spin() {
+        var images = [
+          "1.png",
+          "2.png",
+          "3.png",
+          "4.png",
+          "5.png",
+          "6.png",
+          "7.png",
+          "8.png",
+          "9.png",
+        ];
+
+        for (var i = 1; i <= 9; i++) {
+          var randomIndex = Math.floor(Math.random() * images.length);
+          document.getElementById("slot" + i).src = images[randomIndex];
+        }
+      }
+    </script>
+    <script src="green.js"></script>
+
+  </body>
+</html>
